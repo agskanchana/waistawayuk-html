@@ -1156,7 +1156,7 @@ ul {
 /* Video Feature Section */
 .video-feature-section {
     position: relative;
-    background: linear-gradient(135deg, #df1900 0%, #932300 100%);
+    background: linear-gradient(135deg, #75a5d5 0%, #4a7fb6 100%);
     color: var(--white);
     padding: 90px 0;
     overflow: hidden;
