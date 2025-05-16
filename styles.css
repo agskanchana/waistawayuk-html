@@ -2168,6 +2168,7 @@ ul {
 }
 
 /* Add subtle pattern background */
+/*
 .site-footer::before {
     content: '';
     position: absolute;
@@ -2177,7 +2178,7 @@ ul {
     bottom: 0;
     background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20v20H0V0zm10 17.5c4.142 0 7.5-3.358 7.5-7.5 0-4.142-3.358-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.142 3.358 7.5 7.5 7.5zM20 20v20H0V20h20zM10 37.5c4.142 0 7.5-3.358 7.5-7.5 0-4.142-3.358-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.142 3.358 7.5 7.5 7.5zM20 0h20v20H20V0zm10 17.5c4.142 0 7.5-3.358 7.5-7.5 0-4.142-3.358-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.142 3.358 7.5 7.5 7.5zM40 20v20H20V20h20zm-10 17.5c4.142 0 7.5-3.358 7.5-7.5 0-4.142-3.358-7.5-7.5-7.5-4.142 0-7.5 3.358-7.5 7.5 0 4.142 3.358 7.5 7.5 7.5z' fill='%23e0e0e0' fill-opacity='0.3' fill-rule='evenodd'/%3E%3C/svg%3E");
     opacity: 0.1;
-}
+}*/
 
 /* Footer Top Section */
 .footer-top {
@@ -2320,18 +2321,59 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    background-color: var(--primary);
-    color: var(--white);
+    color: white !important;
+    text-decoration: none;
     transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand-specific colors */
+.social-icon.facebook {
+    background-color: #1877f2; /* Facebook blue */
+}
+
+.social-icon.twitter {
+    background-color: #1da1f2; /* Twitter blue (or legacy Twitter) */
+}
+
+.social-icon.instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); /* Instagram gradient */
+}
+
+.social-icon.linkedin {
+    background-color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icon.youtube {
+    background-color: #ff0000; /* YouTube red */
 }
 
 .social-icon:hover {
-    background-color: var(--secondary);
-    color: var(--black);
     transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon.facebook:hover {
+    background-color: #0d6efd;
+}
+
+.social-icon.twitter:hover {
+    background-color: #0c93e4;
+}
+
+.social-icon.instagram:hover {
+    background: linear-gradient(45deg, #e78217 0%, #dd5424 25%, #d01739 50%, #bb1459 75%, #a9097c 100%);
+}
+
+.social-icon.linkedin:hover {
+    background-color: #005fa3;
+}
+
+.social-icon.youtube:hover {
+    background-color: #e50000;
 }
 
 .social-icon i {
